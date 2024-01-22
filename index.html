@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1>LeaderBoard</h1>
+        <form action="">
+          <input type="text" name="" id="fName" placeholder="First Name" />
+          <input type="text" name="" id="lName" placeholder="Last Name" />
+          <input type="text" name="" id="country" placeholder="Country" />
+          <input type="number" name="" id="score" placeholder="Player Score" />
+          <button type="submit" onclick="handleSubmit(event)">Add Player</button>
+        </form>
+        <ul id="playersList">
+          <li class="player pre-player-1">
+            <div class="player-details">
+              <div class="name-date">
+                <span class="name">Virat Kohli</span>
+                <span class="date">JAN 2023: 09:24:44</span>
+              </div>
+              <span class="country">India</span>
+              <span class="score">85</span>
+            </div>
+            <div class="buttons">
+              <div onclick="deleteEntry(0)" class="delete">🗑</div>
+              <div onclick="increaseScore(0)" class="increase">+5</div>
+              <div onclick="decreaseScore(0)" class="decrease">-5</div>
+            </div>
+          </li>
+
+          <li class="player pre-player-2">
+            <div class="player-details">
+              <div class="name-date">
+                <span class="name">Rohit Sharma</span>
+                <span class="date">JAN 2023: 09:24:44</span>
+              </div>
+              <span class="country">India</span>
+              <span class="score">95</span>
+            </div>
+            <div class="buttons">
+              <div onclick="deleteEntry(1)" class="delete">🗑</div>
+              <div onclick="increaseScore(1)" class="increase">+5</div>
+              <div onclick="decreaseScore(1)" class="decrease">-5</div>
+            </div>
+          </li>
+
+          <li class="player pre-player-3">
+            <div class="player-details">
+              <div class="name-date">
+                <span class="name">Rahul Sharma</span>
+                <span class="date">JAN 2023: 09:24:44</span>
+              </div>
+              <span class="country">India</span>
+              <span class="score">70</span>
+            </div>
+            <div class="buttons">
+              <div onclick="deleteEntry(2)" class="delete">🗑</div>
+              <div onclick="increaseScore(2)" class="increase">+5</div>
+              <div onclick="decreaseScore(2)" class="decrease">-5</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
